@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/firsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="718dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/fragemntsStage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addFragment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="	#F8B195"
+                android:text="Add fragment 1" />
+
+            <Button
+                android:id="@+id/addFragment2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E87385"
+                android:text="Add Fragment" />
+
+            <Button
+                android:id="@+id/addFragment3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C16A85"
+                android:text="Add Fragment 3" />
+
+            <Button
+                android:id="@+id/replaceWith4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#695D7E"
+                android:text="Replace With Fragment 4" />
+
+            <Button
+                android:id="@+id/removeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#355E7C"
+                android:text="Remove" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
